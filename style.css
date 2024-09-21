@@ -1,0 +1,19 @@
+.lampa {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.felkapcsolt {
+    background-color: orange;
+}
+
+.lekapcsolt {
+    background-color: rgb(53, 184, 53);
+}
+
+.tartalom {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+}

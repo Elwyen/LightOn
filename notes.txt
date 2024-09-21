@@ -1,0 +1,34 @@
+MVC
+
+
+view
+
+Lampa (1 lampa)
+
+jatekter(sok lampa)
+
+modell
+
+adattagok:
+9db:
+lista[True,False,True,False,False,True,False,True,True]
+
+#aktIndex/AktLampa
+ha ezt tudjuk meg tudjuk valtoztatni az allapotat
+
+metodusok:
+
+getLista{}
+
+szomszedokKapcsolasa{} 
+// mikor rakattintunk egy lampara kap egy id-t,
+// melyikre kattintottunk ra, beallitja az #aktIndex-et, 
+//a lista aktindexedik elemet beallitja az ellenkezojere, 
+//es a szomszedokat is beallitja az ellenkezore
+
+
+controller:
+
+peldanyositjuk a jatekteret, a modellunk
+es feliratkozunk a szomszedokKapcsolasa() esemenyre
+ezzel ujra peldanyositja a jatekteret
