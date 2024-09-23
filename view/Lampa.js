@@ -15,6 +15,8 @@ export default class Lampa {
     this.szuloElem = szuloElem;
     this.lampaLetrehoz();
     this.lampaElem = $(".lampa:last");
+
+
     if (this.#ertek){
         this.lampaElem.addClass("felkapcsolt")
     } else {
@@ -46,7 +48,6 @@ export default class Lampa {
   lampaLetrehoz() {
     this.szuloElem.append(`
                       <div class="lampa felkapcsolt"> 
-
                       </div>`);
   }
 }
