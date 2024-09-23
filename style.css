@@ -5,13 +5,15 @@
     border-radius: 50%;
 }
 
+.lekapcsolt {
+    background-color: rgb(66, 73, 66);
+}
+
 .felkapcsolt {
     background-color: orange;
 }
 
-.lekapcsolt {
-    background-color: rgb(53, 184, 53);
-}
+
 
 .tartalom {
     display: grid;

@@ -18,10 +18,10 @@ export default class Lampa {
 
 
     if (this.#ertek){
-        this.lampaElem.addClass("felkapcsolt")
+        this.lampaElem.addClass("lekapcsolt")
     } else {
 
-        this.lampaElem.addClass("lekapcsolt")
+        this.lampaElem.addClass("felkapcsolt")
     }
 
 
@@ -47,7 +47,7 @@ export default class Lampa {
 
   lampaLetrehoz() {
     this.szuloElem.append(`
-                      <div class="lampa felkapcsolt"> 
+                      <div class="lampa lekapcsolt"> 
                       </div>`);
   }
 }
