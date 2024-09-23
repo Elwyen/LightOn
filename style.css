@@ -19,3 +19,7 @@
     display: grid;
     grid-template-columns: 60px 60px 60px;
 }
+
+.hidden{
+    display: none;
+}

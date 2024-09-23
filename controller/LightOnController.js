@@ -10,7 +10,7 @@ export default class LightOnController {
     this.szuloElem = $(".tartalom");
     let lista = this.loModel.getLista();
     new JatekTer(lista, this.szuloElem);
-
+    
     this.kapcsolEsemeny();
 
 
@@ -20,9 +20,30 @@ export default class LightOnController {
     $(window).on("kapcsol", (event) => {
         //console.log(event.detail); // Print the selected card's data
         //console.log(kivalasztottItem); // Print the selected item
+        this.gameStarted = true;
         this.loModel.szomszedokKapcsolasa(event.detail);
         let lista = this.loModel.getLista();
         new JatekTer(lista, this.szuloElem);
+        
+        this.gameStarted = false;
+        if (this.nyertelChecker()) {
+          this.nyertelUzenet();
+        } else{
+          this.hideNyertelUzenet();
+        }
       });
+  }
+
+  nyertelChecker() {
+    const lista = this.loModel.getLista();
+    console.log(lista)
+    return lista.every(lamp => lamp === false);
+  }
+
+  nyertelUzenet() {
+    $(".hidden").removeClass("hidden").addClass("visible");
+  }
+  hideNyertelUzenet(){
+    $(".visible").removeClass("visible").addClass("hidden");
   }
 }
